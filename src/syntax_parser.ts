@@ -39,7 +39,7 @@ export function parseSyntaxInternal(syntax: string, opts: ParseOptionsInternal):
                 if (c == endTag || c == ':')
                     break;
             }
-            let argName = syntax.substring(startIof, i - startIof).trim();
+            let argName = syntax.substring(startIof, i).trim();
             let argType;
             if (opts.argNameToType) {
                 if (c == ':')
